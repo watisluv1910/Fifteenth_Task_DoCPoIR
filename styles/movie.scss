@@ -1,0 +1,116 @@
+body {
+    background: var(--clr-dark-grey);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem;
+    height: 60px;
+
+    .header__logo {
+        color: var(--clr-white);
+    }
+
+    .header__search {
+        padding: 8px;
+
+        border: 2px solid var(--clr-dark-grey);
+        border-radius: 5px;
+        outline: none;
+    }
+}
+  
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .movie {
+        position: relative;
+
+        width: 240px;
+        margin: 10px;
+
+        .movie__cover-inner {
+            position: relative;
+            height: 360px;
+
+            .movie__cover {
+                max-width: 100%;
+                height: 100%;
+            }
+
+            .movie__cover--darkened {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+
+                max-width: 100%;
+                height: 100%;
+
+                opacity: 0.1;
+                z-index: 1;
+
+                background-color: var(--clr-black);
+
+                &:hover {
+                    background-color: var(--clr-light-grey);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .movie__info {
+            padding-block: 10px;
+
+            .movie__title {
+                color: var(--clr-white);
+            }
+
+            .movie__category {
+                color: var(--clr-yellow);
+            }
+
+            .movie__average {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 0;
+                
+                width: 36px;
+                aspect-ratio: 1 / 1;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                border-radius: 50%;
+
+                color: var(--clr-white);
+                background-color: var(--clr-dark-grey);
+
+                &-green {
+                    border: 1px solid var(--clr-mid-green);
+                }
+                
+                &-orange {
+                    border: 1px solid var(--clr-light-orange);
+                }
+                
+                &-red {
+                    border: 1px solid var(--clr-red);
+                }
+            }
+        }
+    }
+}
+  
+  
