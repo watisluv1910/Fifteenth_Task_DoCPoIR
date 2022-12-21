@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+.ff-headline-1, .ff-headline-3, .ff-headline-6 {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+}
+
+.ff-headline-2, .ff-headline-4, .ff-headline-5 {
+  font-family: "Libre Franklin", sans-serif;
+  font-style: normal;
+}
+
+.ff-headline-1 {
+  font-weight: 900;
+  font-size: 9.6rem;
+  line-height: 11.2rem;
+  /* identical to box height, or 117% */
+  letter-spacing: -0.15rem;
+}
+
+.ff-headline-2 {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 7.2rem;
+  /* identical to box height, or 120% */
+  letter-spacing: -0.05rem;
+}
+
+.ff-headline-3 {
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  /* identical to box height, or 117% */
+  letter-spacing: 0.045rem;
+}
+
+.ff-headline-4 {
+  font-weight: 500;
+  font-size: 3.4rem;
+  line-height: 4rem;
+  /* identical to box height, or 118% */
+  letter-spacing: 0.025rem;
+}
+
+.ff-headline-5 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  /* identical to box height, or 133% */
+  letter-spacing: 0.025rem;
+}
+
+.ff-headline-6 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  /* identical to box height, or 120% */
+  letter-spacing: 0.015rem;
+}
+
+.ff-subtitle-1 {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.015rem;
+}
+
+.ff-subtitle-2 {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.ff-body-1 {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  /* identical to box height, or 138% */
+  letter-spacing: 0.045rem;
+}
+
+.ff-body-2 {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  /* identical to box height, or 129% */
+  letter-spacing: 0.025rem;
+}
+
+.ff-button {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.05rem;
+}
+
+.ff-caption {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.ff-overline {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  /* identical to box height, or 160% */
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+.ff-logo {
+  font-family: "Chomsky";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4rem;
+  line-height: 5rem;
+  letter-spacing: 0.05rem;
+}
+
+.ff-captcha {
+  font-family: "CaptchaCode";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  letter-spacing: 1.2rem;
+}
+
+@font-face {
+  font-family: "Chomsky";
+  src: url("/resources/fonts/Chomsky/Chomsky.woff2") format("woff2"), url("/resources/fonts/Chomsky/Chomsky.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaptchaCode";
+  src: url("/resources/fonts/CaptchaCode/captchacode.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.theme-dark {
+  --clr-black: #001219;
+  --clr-pastel: #E9D8A6;
+  --clr-white: #EFEFEF;
+  --clr-dark-blue: #005F73;
+  --clr-mid-blue: #0A9396;
+  --clr-light-blue: #94D2BD;
+  --clr-dark-orange: #BB3E03;
+  --clr-mid-orange: #CA6702;
+  --clr-light-orange: #EE9B00;
+  --clr-dark-red: #9B2226;
+  --clr-red: #AE2012;
+}

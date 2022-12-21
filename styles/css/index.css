@@ -1,0 +1,37 @@
+.body-content {
+  color: var(--clr-white);
+  background: var(--clr-black);
+}
+
+.clickable {
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.clickable:hover {
+  transform: scale(1.05);
+}
+.clickable:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-content {
+  color: var(--clr-white);
+}
+.main-content section[class*=task-] {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.main-content .task-1-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main-content .task-1-2 > a {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--clr-white);
+}
