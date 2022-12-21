@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US" class="theme-dark">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/styles/ini/css/default.css">
-        <link rel="stylesheet" href="/styles/css/index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <title>Practical work num. 15</title>
+        <link rel="stylesheet" href="/styles/css/wheather.css">
+        <title>Wheather App</title>
     </head>
+
     <body>
-        <div class="body-content">
-            <main>
-                <div class="main-content">
-                    <section class="task-1-2">
-                        <a href="/pages/movie.html" class="clickable ff-subtitle-1">Movie App</a>
-                        <a href="/pages/wheather.html" class="clickable ff-subtitle-1">Wheather App</a>
-                    </section>
+
+        <div class="wrapper">
+            <div class="container">
+                <div class="search-container ff-subtitle-1">
+                    <input
+                    type="text"
+                    placeholder="Enter a city name"
+                    id="city"
+                    />
+                    <button id="search-btn" class="btn clickable ff-button">Search</button>
                 </div>
-            </main>
+                <div id="result" class="result-container"></div>
+            </div>
         </div>
 
         <!-- Scripts -->
@@ -27,5 +32,8 @@
 
         <!-- Jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        <script src="/src/js/wheather-app.js"></script>
     </body>
+
 </html>
